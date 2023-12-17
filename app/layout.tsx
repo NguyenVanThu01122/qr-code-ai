@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   },
 };
 
-<Script
+{/* <Script
   id="adsbygoogle-init"
   strategy="afterInteractive"
   crossOrigin="anonymous"
   src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxx"
-/>
+/> */}
 
 
 export default function RootLayout({
@@ -56,6 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <PlausibleProvider domain="qrgpt.io" />
+        <meta name="google-adsense-account" content="ca-pub-4007829878593321"></meta>
       </head>
       <body className={inter.className}>
         <Navbar />
