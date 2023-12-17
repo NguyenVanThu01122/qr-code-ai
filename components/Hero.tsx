@@ -63,7 +63,12 @@ export default function Hero() {
       </div>
       <ins
         className="adsbygoogle"
-        style={{ display: 'block' }}
+        style={{
+          display: 'block',
+          width: '100%',
+          height: '300px',
+          border: '1px solid black',
+        }}
         data-ad-client="ca-pub-4007829878593321"
         data-ad-slot="9636478565"
         data-ad-format="auto"
