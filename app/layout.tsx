@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import PlausibleProvider from 'next-plausible';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
