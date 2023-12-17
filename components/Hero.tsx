@@ -1,11 +1,25 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect } from 'react';
 import NavLink from './NavLink';
 
 let heroImages = ['/1.png', '/6.png', '/3.png', '/4.png', '/5.png', '/2.png'];
 
 export default function Hero() {
+  useEffect(() => {
+    var ads = document.getElementsByClassName('adsbygoogle').length;
+
+    for (var i = 0; i < ads; i++) {
+      try {
+        if ((window as any).adsbygoogle) {
+          ((window as any).adsbygoogle =
+            (window as any).adsbygoogle || []).push({});
+        }
+      } catch (e) {}
+    }
+  }, []);
+
   return (
     <section>
       <div className="custom-screen pt-28 text-gray-600">
@@ -47,6 +61,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-4007829878593321"
+        data-ad-slot="9636478565"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </section>
   );
 }
